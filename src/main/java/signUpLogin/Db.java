@@ -4,13 +4,13 @@ import java.sql.DriverManager;
 
 public class Db {
     public Connection databaseLink;
-    public getConnection (){
+    public Connection getConnection (){
         String databaseName ="demo_db";
         String databaseUserName="user";
         String databasePassword="password";
         String url="jdbc:mysql://localhost"+ databaseName;
         try{
-            class.forName("com.mysql.cj.jbbc.driver");
+            Class.forName("com.mysql.cj.jbbc.driver");
             databaseLink= DriverManager.getConnection(url,databaseUserName,databasePassword);
 
         }catch (Exception e){
@@ -20,6 +20,5 @@ public class Db {
         return databaseLink;
     }
 
-    public connection getConnection() {
-    }
+
 }

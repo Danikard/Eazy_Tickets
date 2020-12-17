@@ -14,19 +14,27 @@ public class Login {
     private PasswordField enterPasswordField;
     private Label loginMassageLabel;
 
-    public Button loginButtonOnAction(ActionEvent event) {
+    public void loginButtonOnAction(ActionEvent event) {
 
-        if (usernameTextField.getText().isBlank() == false && enterPasswordField.getText().isBlank() == false) {
+        if (usernameTextField.getText().isEmpty() == false && enterPasswordField.getText().isEmpty() == false) {
             loginMassageLabel.setText("tried login");
 
 
         } else {
             loginMassageLabel.setText("tried login");
         }
+
     }
+
     public void validateLogin(){
      Db connectNow =new Db();
-     connection connectDB= connectNow.getConnection();
+     Connection connectDB= connectNow.getConnection();
+     try{
+
+     }catch (Exception e){
+         e.printStackTrace();
+         e.getCause();
+     }
 
     }
 }
