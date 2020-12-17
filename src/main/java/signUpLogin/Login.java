@@ -7,4 +7,5 @@ import javafx.scene.control.Label;
 
 public class Login {
     private TextField usernameTextField;
+    private PasswordField enterPasswordField;
 }
