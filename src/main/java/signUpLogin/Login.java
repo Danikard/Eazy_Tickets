@@ -5,7 +5,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
-
+import java.io.File;
+import java.sql.Connection;
+import java.util.ResourceBundle;
+import java.net.URL;
 public class Login {
     private TextField usernameTextField;
     private PasswordField enterPasswordField;
@@ -20,7 +23,10 @@ public class Login {
         } else {
             loginMassageLabel.setText("tried login");
         }
-
+    }
+    public void validateLogin(){
+     Db connectNow =new Db();
+     connection connectDB= connectNow.getConnection();
 
     }
 }

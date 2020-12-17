@@ -17,6 +17,9 @@ public class Db {
             e.printStackTrace();
             e.getCause();
         }
-        return databaseLink
+        return databaseLink;
+    }
+
+    public connection getConnection() {
     }
 }
