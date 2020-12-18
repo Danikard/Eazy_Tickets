@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+<body>
+<div class=" container-fluid">
+    <div class="row">
+        <div class="col-sm-4" id="center">
+            <form action="/signUp/new" method="POST" name="test">
+                <div class="form-group">
+                    <label for="userName"> User name </label><br>
+                    <input id="nameOfAnimal" name="name" placeholder="user Name" type="text" tabindex="1" required autofocus class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="Password">Password:</label><br>
+                    <input id="ranger_name" name="ranger_name" type="text" required class="form-control" >
+                </div>
+                <button type="submit" class="btn btn-success">SUBMIT</button>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+{{/partial}}
+{{> layout.hbs}}
